@@ -14,7 +14,6 @@
 <body>
 	<div class="container-fluid bg-dark">
 		<!-- Header -->
-
 		<header class="primary-header container group">
 
 			<h1 class="logo">
@@ -34,7 +33,7 @@
 					<!--
 		    -->
 					<li>
-						<a href="">About Us</a>
+						<a href="about.html">About Us</a>
 					</li>
 					<!--
 		    -->
@@ -44,169 +43,164 @@
 					<!--
 		    -->
 					<li>
-						<a href="">Search</a>
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span> Search
+						</button>
 					</li>
 					<!--
 		    -->
 					<li>
-						<a href="">Account</a>
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-user"></span>
+						</button>
 					</li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Hero -->
-		<div class="container">
-			<h1>Top Picks</h2>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="assets/images/creed2.png" alt="Creed2" style="width:100%;">
-						</div>
-
-						<div class="item">
-							<img src="assets/images/rbti.png" alt="Ralph" style="width:100%;">
-						</div>
-
-						<div class="item">
-							<img src="assets/images/cog.png" alt="HairyPooter" style="width:100%;">
-						</div>
-					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-		</div>
-
-		<!-- Teasers -->
-
 		<section class="row">
 			<div class="grid">
-				<!-- Tab links -->
-				<div class="tab">
-					<button class="tablinks" onclick="openTab(event, 'OutNow')">Out Now</button>
-					<button class="tablinks" onclick="openTab(event, 'ComingSoon')">Coming Soon</button>
-				</div>
+				<h1>Top Picks</h2>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-				<!-- Tab content -->
-				<div id="OutNow" class="tabcontent">
-					<section class="row">
-						<div class="grid">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
 
-							<!-- Creed 2 -->
-							<section class="teaser col-1-3">
-								<a href="creed2.html">
-									<img src="assets/images/creed2poster.jpg" alt="Creed2Poster">
-									<h3>Creed 2</h3>
-								</a>
-							</section>
 
-							<!-- Ralph Breaks The Internet -->
-							<section class="teaser col-1-3">
-								<a href="rbti.html">
-									<img src="assets/images/rbtiposter.jpg" alt="RalphPoster">
-									<h3>Ralph Breaks The Internet</h3>
-								</a>
-							</section>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="assets/images/creed2.png" alt="Creed2" style="width:100%;">
+							</div>
 
-							<!-- Crimes of Grindelwalk -->
-							<section class="teaser col-1-3">
-								<a href="cog.html">
-									<img src="assets/images/cogposter.jpg" alt="HairyPooterPoster">
-									<h3>The Crimes of Grindelwald</h3>
-								</a>
-							</section>
+							<div class="item">
+								<img src="assets/images/rbti.png" alt="Ralph" style="width:100%;">
+							</div>
 
-							<!-- Dragonball Broly -->
-							<section class="teaser col-1-3">
-								<a href="dbb.html">
-									<img src="assets/images/broly.jpg" alt="DragonballPoster">
-									<h3>Dragonball Broly</h3>
-								</a>
-							</section>
-
-							<!-- End of Evangelion -->
-							<section class="teaser col-1-3">
-								<a href="dbb.html">
-									<img src="assets/images/eva.jpg" alt="EVEPoster">
-									<h3>End of Evangelion</h3>
-								</a>
-							</section>
-
-							<!-- Your Name -->
-							<section class="teaser col-1-3">
-								<a href="dbb.html">
-									<img src="assets/images/yourname.png" alt="YourNamePoster">
-									<h3>Your Name</h3>
-								</a>
-							</section>
-
+							<div class="item">
+								<img src="assets/images/cog.png" alt="HairyPooter" style="width:100%;">
+							</div>
 						</div>
 
-						<!-- Tab content -->
-						<div id="ComingSoon" class="tabcontent">
-							<h3>Coming Soon</h3>
-							<p>These films are coming soon.</p>
-						</div>
 
-				</div>
-				</section>
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 
-				<!-- Footer -->
 
-				<footer class="primary-footer container group">
-					<small>&copy; Derry Theatre</small>
 
-					<nav class="nav">
-						<ul>
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<!--
-	    -->
-							<li>
-								<a href="">Shows</a>
-							</li>
-							<!--
-	    -->
-							<li>
-								<a href="">About Us</a>
-							</li>
-							<!--
-	    -->
-							<li>
-								<a href="">Book Now</a>
-							</li>
-							<!--
-	    -->
-							<li>
-								<a href="">Search</a>
-							</li>
-							<!--
-	    -->
-							<li>
-								<a href="">Account</a>
-							</li>
-						</ul>
-					</nav>
-				</footer>
+					<div class="tab">
+						<button class="tablinks" onclick="openTab(event, 'OutNow')">Out Now</button>
+						<button class="tablinks" onclick="openTab(event, 'ComingSoon')">Coming Soon</button>
+					</div>
+
+					<div id="OutNow" class="tabcontent">
+						<section class="row">
+							<div class="grid">
+								<ul>
+									<section class="teaser col-1-3">
+										<a href="creed2.html">
+											<img class="img-responsive" src="assets/images/creed2poster.jpg" alt="Creed2Poster">
+											<h3>Creed 2</h3>
+										</a>
+									</section>
+
+									<section class="teaser col-1-3">
+										<a href="rbti.html">
+											<img class="img-responsive" src="assets/images/rbtiposter.jpg" alt="RalphPoster">
+											<h3>Ralph Breaks The Internet</h3>
+										</a>
+									</section>
+
+									<section class="teaser col-1-3">
+										<a href="cog.html">
+											<img class="img-responsive" src="assets/images/cogposter.jpg" alt="HairyPooterPoster">
+											<h3>The Crimes of Grindelwald</h3>
+										</a>
+									</section>
+
+									<section class="teaser col-1-3">
+										<a href="dbb.html">
+											<img class="img-responsive" src="assets/images/eva.jpg" alt="EVEPoster">
+											<h3>End of Evangelion</h3>
+										</a>
+									</section>
+
+									<section class="teaser col-1-3">
+										<a href="dbb.html">
+											<img class="img-responsive" src="assets/images/yourname.png" alt="YourNamePoster">
+											<h3>Your Name</h3>
+										</a>
+									</section>
+
+								</ul>
+							</div>
+						</section>
+					</div>
+
+					<div id="ComingSoon" class="tabcontent">
+						<section class="row">
+							<div class="grid">
+								<ul>
+									<section class="teaser col-1-3">
+										<a href="broly.html">
+											<img class="img-responsive" src="assets/images/broly.jpg" alt="DragonballPoster">
+											<h3>Dragonball Broly</h3>
+										</a>
+									</section>
+
+								</ul>
+							</div>
+						</section>
+					</div>
 
 			</div>
+		</section>
+
+
+		<!-- Footer -->
+		<footer class="primary-footer container group">
+			<small>&copy; Derry Theatre</small>
+
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+
+					<li>
+						<a href="">Shows</a>
+					</li>
+
+					<li>
+						<a href="">About Us</a>
+					</li>
+
+					<li>
+						<a href="">Book Now</a>
+					</li>
+
+					<li>
+						<a href="">Search</a>
+					</li>
+
+					<li>
+						<a href="">Account</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+
+	</div>
 </body>
 
 <!--
