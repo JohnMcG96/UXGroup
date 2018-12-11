@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/john.css">
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -69,15 +69,15 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="assets/creed2.png" alt="Creed2" style="width:100%;">
+						<img src="assets/images/creed2.png" alt="Creed2" style="width:100%;">
 					</div>
 
 					<div class="item">
-						<img src="assets/rbti.png" alt="Ralph" style="width:100%;">
+						<img src="assets/images/rbti.png" alt="Ralph" style="width:100%;">
 					</div>
 
 					<div class="item">
-						<img src="assets/cog.png" alt="HairyPooter" style="width:100%;">
+						<img src="assets/images/cog.png" alt="HairyPooter" style="width:100%;">
 					</div>
 				</div>
 
@@ -97,42 +97,24 @@
 
 		<section class="row">
 			<div class="grid">
+				<!-- Tab links -->
+				<div class="tab">
+					<button class="tablinks" onclick="openTab(event, 'OutNow')">Out Now</button>
+					<button class="tablinks" onclick="openTab(event, 'ComingSoon')">Coming Soon</button>
+				</div>
 
-				<!-- Speakers -->
-				<section class="teaser col-1-3">
-					<h5>Speakers</h5>
-					<a href="speakers.html">
-						<img src="assets/images/speakers.jpg" alt="Professional Speaker">
-						<h3>World-Class Speakers</h3>
-					</a>
-					<p>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.</p>
-				</section>
-				<!--
+				<!-- Tab content -->
+				<div id="OutNow" class="tabcontent">
+					<h3>Out Now</h3>
+					<p>These films are now showing.</p>
+				</div>
 
-			Schedule
-			
-			-->
-				<section class="teaser col-1-3">
-					<h5>Schedule</h5>
-					<a href="schedule.html">
-						<img src="assets/images/schedule.jpg" alt="Schedule">
-						<h3>Three Inspiring Days</h3>
-					</a>
-					<p>Enjoy three inspiring and action-packed days of talks, gatherings, and all-round good times.</p>
-				</section>
-				<!--
+				<!-- Tab content -->
+				<div id="ComingSoon" class="tabcontent">
+					<h3>Coming Soon</h3>
+					<p>These films are coming soon.</p>
+				</div>
 
-			Venue
-			
-			-->
-				<section class="teaser col-1-3">
-					<h5>Venue</h5>
-					<a href="venue.html">
-						<img src="assets/images/venue.jpg" alt="Venue">
-						<h3>Ulster University, Magee</h3>
-					</a>
-					<p>Beautiful city centre campus location with modern state of the art facilities.</p>
-				</section>
 			</div>
 		</section>
 
@@ -177,5 +159,26 @@
 
 	</div>
 </body>
+
+<!--
+ ========================================
+ Javascript
+ ========================================
+-->
+<script>
+	function openTab(evt, tabName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
 
 </html>
