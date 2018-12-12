@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Derry Theatre</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <!-- Header -->
+        <header class="primary-header container group">
+
+            <h1 class="logo">
+                <a href="index.html">Derry Theatre</a>
+            </h1>
+
+            <nav class="nav primary-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!--
+		    -->
+                    <li>
+                        <a href="">Shows</a>
+                    </li>
+                    <!--
+		    -->
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!--
+		    -->
+                    <li>
+                        <a href="booknow.html">Book Now</a>
+                    </li>
+                    <!--
+		    -->
+                    <li>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span> Search
+                        </button>
+                    </li>
+                    <!--
+		    -->
+                    <li>
+                        <a href="register.html">
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="row">
+            <div class="grid">
+                <form action="#" method="post">
+                    Please enter details as required
+                    <fieldset>
+                        <label>
+                            <br> Movie </br>
+                            <label>
+                                <select name="Movies">
+                                    <option value="Creed 2" selected="selected">Creed 2</option>
+                                    <option value="WreckIt">Wreck It Ralph Breaks the Internet</option>
+                                    <option value="Crimes">Crimes of Grindelwald</option>
+                                    <option value="EVA">End of Evangelion</option>
+                                    <option value="YourName">Your Name</option>
+                                </select>
+                            </label>
+                            </br>
+                            
+                            <br>
+                            <br> Movie </br>
+                            <label>
+                                <select name="Dates">
+                                    <option value="Monday" selected="selected">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wedbesday">Wednesday</option>
+                                    <option value="Thursday">Thrusday</option>
+                                    <option value="Friday">Friday</option>
+                                </select>
+                            </br>
+
+                            <br> Times </br>
+                            <label>
+                                <select name="Times">
+                                    <option value="13:00" selected="selected">13:00</option>
+                                    <option value="15:15">15:15</option>
+                                </select>
+                            </label>
+
+                            </br>
+                            <label>
+                                <br>
+                                <form action="creditCardInfo.html">
+                                    <input type="submit" name="submit" value="Submit">
+                            </label>
+                            </br>
+                        </label>
+                    </fieldset>
+                    </form>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="primary-footer container group">
+            <small>&copy; Derry Theatre</small>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="">Shows</a>
+                    </li>
+
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="">Book Now</a>
+                    </li>
+
+                    <li>
+                        <a href="">Search</a>
+                    </li>
+
+                    <li>
+                        <a href="">Account</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+
+<!--
+ ========================================
+ Javascript
+ ========================================
+-->
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</html>
