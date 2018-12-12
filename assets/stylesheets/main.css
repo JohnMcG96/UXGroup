@@ -47,20 +47,16 @@ table {
 }
 
 /*
-  ========================================
   Custom styles
-  ========================================
 */
 body {
-  background: #293f50;
+  background: #1e7259;
   color: #888;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px "Arial", "Georgia", "Times New Roman", sans-serif;
 }
 
 /*
-  ========================================
   Grid
-  ========================================
 */
 
 *,
@@ -99,9 +95,7 @@ body {
 }
 
 /*
-  ========================================
   Clearfix
-  ========================================
 */
 .group:before,
 .group:after {
@@ -117,9 +111,7 @@ body {
 }
 
 /*
-  ========================================
   Rows
-  ========================================
 */
 
 .row,
@@ -141,9 +133,7 @@ body {
  }
 
 /*
-  ========================================
   Typography
-  ========================================
 */
 
 h1, h3, h4, h5, p {
@@ -178,23 +168,7 @@ cite, em {
 }
 
 /*
-  ========================================
-  Leads
-  ========================================
-*/
-
-.lead {
-  text-align: center;
-}
-.lead p {
-  font-size: 21px;
-  line-height: 33px;
-}
-
-/*
-  ========================================
   Links
-  ========================================
 */
 a {
   color: #648880;
@@ -202,7 +176,7 @@ a {
 }
 
 a:hover {
-  color: #a9b2b9;
+  color: #007ad8;
 }
 
 p a {
@@ -215,13 +189,11 @@ p a {
 }
 .primary-header a:hover,
 .primary-footer a:hover {
-  color: #648880;
+  color: #a70000;
 }
 
 /*
-  ========================================
   Buttons
-  ========================================
 */
 
 .btn {
@@ -257,9 +229,7 @@ p a {
 }
 
 /*
-  ========================================
   Primary header
-  ========================================
 */
 
 .logo {
@@ -272,10 +242,6 @@ p a {
   text-transform: uppercase;
 }
 
-.tagline {
-  margin: 66px 0 22px 0;
-  text-align: right;
-}
 
 .primary-nav {
   font-size: 14px;
@@ -286,9 +252,7 @@ p a {
 
 
 /*
-  ========================================
   Primary footer
-  ========================================
 */
 
 .primary-footer {
@@ -303,9 +267,7 @@ p a {
 }
 
 /*
-  ========================================
   Navigation
-  ========================================
 */
 
 .nav {
@@ -323,9 +285,7 @@ p a {
 
 
 /*
-  ========================================
   Home
-  ========================================
 */
 
 .hero {
@@ -352,147 +312,51 @@ p a {
 }
 
 /*
-  ========================================
-  Speakers
-  ========================================
+  Table
 */
 
-.speaker {
-  margin-bottom: 44px;
-}
-
-.speaker-info {
-  border: 1px solid #dfe2e5;
-  border-radius: 5px;
-  margin-top: 88px;
-  padding-bottom: 22px;
-  text-align: center;
-}
-
-.speaker-info img {
-  border-radius: 50%;
-  height: 130px;
-  margin: -66px 0 22px 0;
-  vertical-align: top;
-}
-
-
-/*
-  ========================================
-  Venue
-  ========================================
-*/
-
-.venue-theatre {
-  margin-bottom: 66px;
-}
-.venue-hotel {
-  margin-bottom: 22px;
-}
-
-.venue-map {
-  height: 264px;
-}
-
-/*
- ========================================
- Register
- ========================================
-*/
-.why-attend {
- list-style: square;
- margin: 0 0 22px 30px;
-}
-
-form {
- margin-bottom: 22px;
-}
-
-input,
-select,
-textarea {
- font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.register-group label {
- color: #648880;
- cursor: pointer;
- font-weight: 400;
-}
-
-.register-group input,
-.register-group select,
-.register-group textarea {
- border: 1px solid #c6c9cc;
-  border-radius: 5px;
- color: #888;
- display: block;
- margin: 5px 0 27px 0;
- padding: 5px 8px;
-}
-
-.register-group input,
-.register-group textarea {
- width: 100%;
-}
-
-.register-group select {
- height: 34px;
- width: 60px;
-}
-
-.register-group textarea {
- height: 78px;
-}
-
-
-/*
- ========================================
- Schedule
- ========================================
-*/
 table {
- margin-bottom: 44px;
- width: 100%;
-}
-table:last-child {
- margin-bottom: 0;
-}
-th,
-td {
- padding-bottom: 22px;
- vertical-align: top;
-}
-th {
- padding-right: 45px;
- text-align: right;
- width: 20%;
-}
-td {
- width: 40%;
-}
-thead {
- line-height: 44px;
-}
-thead th {
- color: #648880;
- font-size: 24px;
-}
-tbody th {
- color: #a9b2b9;
- font-size: 14px;
- font-weight: 400;
- padding-top: 22px;
- text-transform: uppercase;
-}
-tbody td {
- border-top: 1px solid #dfe2e5;
- padding-top: 21px;
-}
-tbody td:only-of-type {
- padding-left: 0;
- padding-right: 0;
-}
+  margin-bottom: 44px;
+  width: 100%;
+ }
+ th,
+ td {
+  padding-bottom: 30px;
+  vertical-align: top;
+ }
+ th {
+  padding-right: 25px;
+  text-align: right;
+  width: 20%;
+ }
+ td {
+  width: 40%;
+ }
+ thead {
+  line-height: 30px;
+ }
+ thead th {
+  color: #000000;
+  font-size: 24px;
+ }
+ tbody th {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000000
+ }
+ 
+ tbody td {
+  border-top: 2px solid #000000;
+  padding-top: 20px;
+ }
+ 
+ tbody td:first-of-type {
+  padding-right: 10px;
+ }
+
 table a {
  color: #888;
 }
@@ -510,9 +374,7 @@ table h4 {
 }
 
 /*
- ========================================
  Tabs
- ========================================
 */
 .tab button {
   background-color: inherit;
